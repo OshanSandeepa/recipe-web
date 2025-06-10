@@ -1,4 +1,9 @@
 # Recipe Web Application
+![image](https://github.com/user-attachments/assets/f36f635e-91de-44ef-8156-94327276fd5b)
+
+![image](https://github.com/user-attachments/assets/6dc2c90c-ea26-4d7e-ab07-ab52e013aa78)
+![image](https://github.com/user-attachments/assets/c22bb168-4c38-496c-8808-f0ff0d4eff66)
+
 
 A full-stack web application that allows users to explore, save, and manage their favorite recipes using TheMealDB API.
 
@@ -56,9 +61,12 @@ npm install
 3. Create a `.env` file in the backend directory with the following variables:
 ```
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/recipe-app
+DB_NAME=food-recipe
+DB_USER=
+DB_PASSWORD=
+DB_HOST=
 JWT_SECRET=your-super-secret-jwt-key
-NODE_ENV=development
+NODE_ENV=developmentt
 ```
 
 4. Start the development servers:
