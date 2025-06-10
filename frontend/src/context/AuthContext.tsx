@@ -28,23 +28,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const storedToken = localStorage.getItem('token');
     if (storedToken) {
       try {
-        const decoded = jwtDecode<{ userId: string }>(storedToken);
         // Directly set user and token from stored token if valid and user data is present
-        // Assuming login/register already store user data or we fetch it here if needed
-        // For now, we'll rely on user data from login/register response
         setToken(storedToken);
-        // If you need to re-fetch user details on reload, you'd add an API call here
-        // For simplicity and given the current backend, we won't re-fetch here if user object is not in token.
-        // If user data is always returned with token on login/register, it's sufficient.
-
-        // This part needs to be considered based on what `jwtDecode` actually gives you back
-        // and if it contains enough information to set the user state.
-        // For now, we assume user object is fully populated on login/register.
         const storedUser = localStorage.getItem('user'); // Assuming user data is also stored
         if (storedUser) {
           setUser(JSON.parse(storedUser));
         }
-
       } catch (error) {
         localStorage.removeItem('token');
         localStorage.removeItem('user');

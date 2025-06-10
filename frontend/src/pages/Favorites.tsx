@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 import toast from 'react-hot-toast';
-import { HeartIcon as HeartOutlineIcon } from '@heroicons/react/24/outline'; // Outline heart for non-favorites
 import { HeartIcon as HeartSolidIcon } from '@heroicons/react/24/solid';   // Solid heart for favorites
 
 interface Recipe {
