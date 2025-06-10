@@ -1,4 +1,6 @@
 # Recipe Web Application
+![image](https://github.com/user-attachments/assets/6dc2c90c-ea26-4d7e-ab07-ab52e013aa78)
+
 
 A full-stack web application that allows users to explore, save, and manage their favorite recipes using TheMealDB API.
 
