@@ -98,7 +98,7 @@ const RecipeDetails = () => {
 
   const ingredients = Object.entries(recipe)
     .filter(([key, value]) => key.startsWith('strIngredient') && value)
-    .map(([key, value], index) => ({
+    .map(([_, value], index) => ({
       ingredient: value,
       measure: recipe[`strMeasure${index + 1}` as keyof Recipe] || '',
     }));
