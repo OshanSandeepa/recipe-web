@@ -61,9 +61,12 @@ npm install
 3. Create a `.env` file in the backend directory with the following variables:
 ```
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/recipe-app
+DB_NAME=food-recipe
+DB_USER=
+DB_PASSWORD=
+DB_HOST=
 JWT_SECRET=your-super-secret-jwt-key
-NODE_ENV=development
+NODE_ENV=developmentt
 ```
 
 4. Start the development servers:
